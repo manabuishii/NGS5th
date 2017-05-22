@@ -15,10 +15,15 @@ docker と、ジョブスケジューラと、使わないリソースを自動�
 上記の単純なクラスタに、Galaxy を追加したもの、以下の設定を追加する
 
 Master_script
-https://raw.githubusercontent.com/manabuishii/azure-files/master/scripts_for_setup/galaxy_SGE/master_script.sh
 
+```
+https://raw.githubusercontent.com/manabuishii/azure-files/master/scripts_for_setup/galaxy_SGE/master_script.sh
+```
 Worker_script
+
+```
 https://raw.githubusercontent.com/manabuishii/azure-files/master/scripts_for_setup/galaxy_SGE/exec_script.sh
+```
 
 # 注意点
 
