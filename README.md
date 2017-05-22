@@ -2,15 +2,31 @@
 
 # Deploy
 
+## 単純なクラスタのデプロイ
+
+docker と、ジョブスケジューラと、使わないリソースを自動で落とすものが入っています
+
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmanabuishii%2Fazure-files%2Fmaster%2FNFS_SGE%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
+
+## Galaxy のパイプライン
+
+上記の単純なクラスタに、Galaxy を追加したもの、以下の設定を追加する
+
+Master_script
+https://raw.githubusercontent.com/manabuishii/azure-files/master/scripts_for_setup/galaxy_SGE/master_script.sh
+
+Worker_script
+https://raw.githubusercontent.com/manabuishii/azure-files/master/scripts_for_setup/galaxy_SGE/exec_script.sh
 
 # 注意点
 
 * Azureのアカウントがあるか？
 * APIが使えるアカウントか？
 * パスワードが期限切れになっていないか？
+
+
 
 # 参考
 
