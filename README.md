@@ -4,6 +4,12 @@
 
 ## 単純なクラスタのデプロイ
 
+- D1_v2(仮想CPUが１つ) の実行ノードが２つと、ヘッドノードが１つ
+- D14 の NFSサーバがたちあがります。
+
+NFSサーバのスペックがよいのは、アタッチできるディスクサイズの数が多いためです。
+最初から大きなマシンをつくるのであれば、`VM Size` で、指定する仮想マシンのサイズを大きなものにしておく必要があります。
+
 docker と、ジョブスケジューラと、使わないリソースを自動で落とすものが入っています
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmanabuishii%2Fazure-files%2Fmaster%2FNFS_SGE%2Fazuredeploy.json" target="_blank">
